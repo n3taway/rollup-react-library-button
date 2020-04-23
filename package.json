@@ -1,0 +1,23 @@
+{
+  "name": "react-library-button",
+  "version": "0.0.1",
+  "description": "react-library-button  just demo",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "start": "rollup -c ./config/rollup.js -w",
+    "build:cjs": "rollup -c ./config/rollup.js",
+    "build": "npm run clean && npm run build:cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.7.1",
+    "rollup-plugin-babel": "^4.4.0"
+  }
+}
